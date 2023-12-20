@@ -9,28 +9,26 @@
 // @grant        none
 // ==/UserScript==
 
-const categorySelector = document.querySelector('a[href="https://jiradg.atlassian.net/issues/?jql=issuetype+%3D+%22Product+Data+Integration%22+AND+%28labels+is+EMPTY+OR+labels+not+in+%28template%2C+test%29%29+AND+status+not+in+%28Planning%2C+Closed%2C+%22Data+Preparation%22%2C+Monitoring%2C+Integration%29+AND+%22CM-Team%5BDropdown%5D%22+%3D+Mobiles+AND+status+%3D+Ready"]')
-//    const categorySelector1 = document.querySelector('a[href="https://jiradg.atlassian.net/issues/?jql=issuetype+%3D+%22Product+Data+Integration%22+AND+%28labels+is+EMPTY+OR+labels+not+in+%28template%2C+test%29%29+AND+status+not+in+%28Planning%2C+Closed%2C+%22Data+Preparation%22%2C+Monitoring%2C+Integration%29+AND+%22CM-Team%5BDropdown%5D%22+%3D+Mobiles+AND+status+%3D+Ready"]')
-if(categorySelector){
+window.addEventListener("load", e => {
+    'use strict'
+    const categorySelector1 = document.querySelector('a[href="https://jiradg.atlassian.net/issues/?jql=issuetype+%3D+%22Product+Data+Integration%22+AND+%28labels+is+EMPTY+OR+labels+not+in+%28template%2C+test%29%29+AND+status+not+in+%28Planning%2C+Closed%2C+%22Data+Preparation%22%2C+Monitoring%2C+Integration%29+AND+%22CM-Team%5BDropdown%5D%22+%3D+Mobiles+AND+status+%3D+Ready"]')
+    if(categorySelector1){
 
-    window.addEventListener("load", e => {
-        'use strict'
-        //    console.log(categorySelector)
+        console.log(Boolean(categorySelector1))
 
-        categorySelector.style.fontSize = "x-large"
-        categorySelector.style.color = "red"
+        categorySelector1.style.fontSize = "x-large"
+        categorySelector1.style.color = "red"
 
         //Hoverovanje preko tabele, da bi radio refresh button samog dashboarda
         window.addEventListener("mouseover", e => {
             'use strict'
+            const categorySelector2 = document.querySelector('a[href="https://jiradg.atlassian.net/issues/?jql=issuetype+%3D+%22Product+Data+Integration%22+AND+%28labels+is+EMPTY+OR+labels+not+in+%28template%2C+test%29%29+AND+status+not+in+%28Planning%2C+Closed%2C+%22Data+Preparation%22%2C+Monitoring%2C+Integration%29+AND+%22CM-Team%5BDropdown%5D%22+%3D+Mobiles+AND+status+%3D+Ready"]')
 
-            if(categorySelector.style.color === "red" && categorySelector.style.fontSize === "x-large"){
+            if(categorySelector2.style.color === "red" && categorySelector2.style.fontSize === "x-large"){
                 return
             }
 
-            categorySelector.style.fontSize = "x-large"
-            categorySelector.style.color = "red"
+            categorySelector2.style.fontSize = "x-large"
+            categorySelector2.style.color = "red"
         });
-    });
-}
-
+    }});
