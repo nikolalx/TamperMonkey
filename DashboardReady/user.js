@@ -7,8 +7,8 @@
 // @match        https://jiradg.atlassian.net/jira/dashboards/25522
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=atlassian.net
 // @grant        none
-// @downloadURL  https://gist.github.com/nikolalx/10f6607b8167698655f554312c19ba15
-// @updateURL    https://gist.github.com/nikolalx/10f6607b8167698655f554312c19ba15
+// @downloadURL  https://raw.githubusercontent.com/nikolalx/TamperMonkey/main/DashboardReady/user.js
+// @updateURL    https://raw.githubusercontent.com/nikolalx/TamperMonkey/main/DashboardReady/user.js
 // ==/UserScript==
 
 window.addEventListener("load", e => {
