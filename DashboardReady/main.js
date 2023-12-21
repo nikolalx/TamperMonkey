@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Jira Dashboard Ready Tickets
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Depict the number of ready ticket in red.
 // @author       Nikola Aleksic
 // @match        https://jiradg.atlassian.net/jira/dashboards/25522
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=atlassian.net
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/nikolalx/TamperMonkey/main/DashboardReady/user.js
-// @updateURL    https://raw.githubusercontent.com/nikolalx/TamperMonkey/main/DashboardReady/user.js
+// @downloadURL  https://github.com/nikolalx/TamperMonkey/raw/main/DashboardReady/main.js
+// @updateURL    https://github.com/nikolalx/TamperMonkey/raw/main/DashboardReady/main.js
 // ==/UserScript==
 
 window.addEventListener("load", e => {
