@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Jira Dashboard Ready Tickets
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Depict the number of ready ticket in red.
 // @author       Nikola Aleksic
 // @match        https://jiradg.atlassian.net/jira/dashboards/25522
